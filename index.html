@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Letícia Meira | Harmonização Facial, BOTOX e Estética Avançada em Goiana - PE</title>
+  <meta name="description"
+    content="Harmonização facial com naturalidade, precisão e elegância em Goiana, PE. BOTOX, preenchimento labial, harmonização e avaliação de pele com a Dra. Letícia Meira. Realce o que te faz única.">
+  <meta name="author" content="Dra. Letícia Meira">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dra. Letícia Meira | Harmonização Facial e Estética Avançada">
+  <meta property="og:description"
+    content="Realce o que te faz única. Harmonização facial com naturalidade e elegância em Goiana - PE.">
+  <meta property="og:image" content="dra-leticia-meira.png">
+
+  <!-- Google Fonts: Playfair Display (Títulos) & Montserrat (Textos e Parágrafos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ==========================================================================
+       DESIGN SYSTEM & CSS VARIABLES (GUIA OFICIAL DA MARCA)
+       ========================================================================== */
+    :root {
+      /* Paleta Oficial */
+      --color-branco-puro: #FFFFFF;
+      /* Fundo principal, limpeza e leveza */
+      --color-bege-nude: #F8F5F2;
+      /* Seções alternadas, fundos e destaque suave */
+      --color-nude-rose: #EADCCF;
+      /* Feminilidade, acolhimento e equilíbrio */
+      --color-dourado-suave: #D4AF37;
+      /* Ícones, detalhes, linhas e sofisticação */
+      --color-cinza-grafite: #2C2C2C;
+      /* Textos principais, títulos e contraste */
+      --color-rose-queimado: #A67C7A;
+      /* Botões de ação / CTA principal */
+
+      /* Derivados Funcionais */
+      --color-rose-hover: #936B69;
+      /* Hover do botão principal */
+      --color-grafite-muted: #5A5A5A;
+      /* Texto secundário */
+      --color-grafite-soft: #7D7D7D;
+      /* Texto suave / captions */
+      --color-border: #E8DFD7;
+      /* Linhas e bordas elegantes */
+      --color-border-subtle: #F2ECE6;
+      /* Divisores leves */
+
+      /* Superfície Escura do Rodapé */
+      --color-dark-footer: #22201F;
+      /* Grafite escuro aquecido */
+      --color-dark-footer-card: #2E2B29;
+      --color-dark-footer-text: #F8F5F2;
+
+      /* Tipografia */
+      --font-serif: 'Playfair Display';
+      --font-sans: 'Montserrat';
+      --font-script: 'Allura', cursive;
+
+      /* Layout & Spacing */
+      --container-max: 1200px;
+      --header-height: 84px;
+      --radius-pill: 50px;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+
+      /* Transições */
+      --transition-fast: 0.25s ease;
+      --transition-normal: 0.35s ease;
+    }
+
+    /* ==========================================================================
+       RESET & BASE STYLES
+       ========================================================================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--color-cinza-grafite);
+      background-color: var(--color-branco-puro);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all var(--transition-fast);
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+
+    /* Tipografia de Destaque */
+    h1,
+    h2,
+    h3,
+    h4,
+    .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 600;
+      color: var(--color-cinza-grafite);
+      line-height: 1.2;
+    }
+
+    /* Garante Montserrat em todos os textos de corpo */
+    p,
+    li,
+    span,
+    a,
+    label,
+    input,
+    textarea,
+    blockquote,
+    .section-description,
+    .about-text,
+    .service-card-text,
+    .cta-text,
+    .location-item-desc,
+    .review-verified,
+    .doctor-caption-desc,
+    .pillar-desc,
+    .hero-tagline,
+    .hero-accent-text,
+    .footer-brand-tagline,
+    .footer-link,
+    .map-helper-bar {
+      font-family: var(--font-sans);
+    }
+
+    .eyebrow {
+      font-family: var(--font-sans);
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-dourado-suave);
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .italic-phrase {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-rose-queimado);
+    }
+
+    /* ==========================================================================
+       ELEMENTOS GRÁFICOS DECORATIVOS
+       ========================================================================== */
+
+    /* Linha dourada ornamental abaixo do eyebrow em seções */
+    .section-ornament {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .section-ornament-line {
+      height: 1px;
+      width: 40px;
+      background: var(--color-dourado-suave);
+      opacity: 0.7;
+    }
+
+    .section-ornament-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--color-dourado-suave);
+      opacity: 0.85;
+    }
+
+    /* Divisor decorativo centralizado entre seções */
+    .divider-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .divider-ornament-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--color-border), transparent);
+      max-width: 160px;
+    }
+
+    .divider-ornament svg {
+      color: var(--color-dourado-suave);
+      opacity: 0.75;
+      flex-shrink: 0;
+    }
+
+    /* Linha lateral esquerda nos títulos de seção */
+    .title-with-rule {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .title-rule-bar {
+      width: 3px;
+      min-height: 48px;
+      background: var(--color-dourado-suave);
+      border-radius: 2px;
+      flex-shrink: 0;
+      margin-top: 4px;
+      opacity: 0.8;
+    }
+
+    /* Hero — linha decorativa sob o nome */
+    .hero-name-rule {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 6px;
+      margin-bottom: 18px;
+    }
+
+    .hero-name-rule-line {
+      height: 1.5px;
+      width: 70px;
+      background: var(--color-dourado-suave);
+      border-radius: 2px;
+    }
+
+    .hero-name-rule-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--color-dourado-suave);
+      transform: rotate(45deg);
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       BOTÕES (EXATOS DO GUIA VISUAL - PILL SHAPE)
+       ========================================================================== */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 14px 30px;
+      border-radius: var(--radius-pill);
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-align: center;
+      white-space: nowrap;
+      transition: all var(--transition-fast);
+    }
+
+    /* Botão Principal: Rosé Queimado */
+    .btn-primary {
+      background-color: var(--color-rose-queimado);
+      color: var(--color-branco-puro);
+      border-color: var(--color-rose-queimado);
+      box-shadow: 0 4px 14px rgba(166, 124, 122, 0.22);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-rose-hover);
+      border-color: var(--color-rose-hover);
+      color: var(--color-branco-puro);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(166, 124, 122, 0.3);
+    }
+
+    /* Botão Secundário: Saiba Mais / Borda Fina */
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--color-cinza-grafite);
+      border-color: var(--color-border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--color-rose-queimado);
+      color: var(--color-rose-queimado);
+      background-color: var(--color-bege-nude);
+    }
+
+    .btn-icon {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2;
+      flex-shrink: 0;
+      transition: transform var(--transition-fast);
+    }
+
+    .btn:hover .btn-icon {
+      transform: translateX(3px);
+    }
+
+    /* ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--header-height);
+      background-color: var(--color-branco-puro);
+      border-bottom: 1px solid var(--color-border);
+      z-index: 1000;
+      transition: background-color var(--transition-normal), box-shadow var(--transition-normal);
+    }
+
+    .site-header.is-scrolled {
+      background-color: #FFFFFFF5;
+      box-shadow: 0 4px 20px rgba(44, 44, 44, 0.04);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .logo {
+      font-family: var(--font-serif);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-cinza-grafite);
+      letter-spacing: -0.01em;
+    }
+
+    .logo-tagline {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      font-weight: 500;
+      color: var(--color-dourado-suave);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: -2px;
+    }
+
+    .nav-desktop {
+      display: none;
+      align-items: center;
+      gap: 32px;
+    }
+
+    @media (min-width: 992px) {
+      .nav-desktop {
+        display: flex;
+      }
+    }
+
+    .nav-link {
+      font-size: 13.5px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--color-grafite-muted);
+      position: relative;
+      padding: 6px 0;
+    }
+
+    .nav-link:hover {
+      color: var(--color-rose-queimado);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: var(--color-dourado-suave);
+      transition: width var(--transition-fast);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .mobile-menu-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      color: var(--color-cinza-grafite);
+      border-radius: var(--radius-sm);
+    }
+
+    @media (min-width: 992px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      background-color: var(--color-branco-puro);
+      border-bottom: 1px solid var(--color-border);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transform: translateY(-120%);
+      opacity: 0;
+      visibility: hidden;
+      transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
+      z-index: 999;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .mobile-drawer.is-open {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-drawer .nav-link {
+      font-size: 16px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--color-border-subtle);
+    }
+
+    /* ==========================================================================\n       SECTION 1: HERO — EDITORIAL / ORGÂNICO\n       ========================================================================== */
+
+    .hero-section {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 590px;
+      padding-top: calc(var(--header-height) + 28px);
+      padding-bottom: 36px;
+      background: var(--color-bege-nude);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    /* Formas orgânicas discretas — sem elementos botânicos no lado esquerdo. */
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      width: 560px;
+      height: 560px;
+      right: -250px;
+      top: -210px;
+      border-radius: 50%;
+      background: rgba(234, 220, 207, 0.48);
+      z-index: -2;
+    }
+
+    .hero-section::after {
+      content: '';
+      position: absolute;
+      width: 430px;
+      height: 150px;
+      left: -180px;
+      bottom: -90px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.62);
+      z-index: -2;
+    }
+
+    /* ======================================================================
+       GRID — DUAS COLUNAS FIXAS, SEM SOBREPOSIÇÃO
+       ====================================================================== */
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      align-items: center;
+      gap: 28px;
+      min-height: 520px;
+    }
+
+    @media (min-width: 992px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 42px;
+        min-height: 520px;
+      }
+    }
+
+    /* ======================================================================
+       CONTEÚDO
+       ====================================================================== */
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      min-width: 0;
+      max-width: 610px;
+      padding: 8px 0 16px;
+    }
+
+    .hero-content .eyebrow {
+      margin-bottom: 12px;
+      font-size: 10.5px;
+      letter-spacing: 0.19em;
+      color: #9B8060;
+    }
+
+    .hero-title {
+      max-width: 100%;
+      margin: 0 0 8px;
+      font-family: var(--font-serif);
+      font-size: clamp(44px, 5vw, 68px);
+      line-height: 0.98;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      color: #2c2c2c;
+    }
+
+    .hero-name-rule {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 3px 0 17px;
+    }
+
+    .hero-name-rule-line {
+      width: 58px;
+      height: 1px;
+      background: #C5A774;
+      opacity: 0.72;
+    }
+
+    .hero-name-rule-diamond {
+      width: 5px;
+      height: 5px;
+      background: #C5A774;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .hero-tagline {
+      max-width: 500px;
+      margin: 0 0 5px;
+      font-family: var(--font-sans);
+      font-size: clamp(16px, 1.5vw, 19px);
+      line-height: 1.55;
+      color: #59656C;
+    }
+
+    /* Volta à tipografia anterior: Playfair Display em itálico. */
+    .hero-slogan {
+      display: block;
+      margin: 5px 0 29px;
+      font-family: var(--font-serif) !important;
+      font-style: italic;
+      font-weight: 400;
+      font-size: clamp(26px, 2.7vw, 35px);
+      line-height: 1.15;
+      color: var(--color-rose-queimado);
+      transform: none;
+    }
+
+    .hero-slogan .slogan-underline {
+      text-decoration-line: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+      text-decoration-color: #B99A70;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-cta-group .btn {
+      min-height: 51px;
+      padding: 14px 28px;
+      font-size: 11.5px;
+      letter-spacing: 0.1em;
+    }
+
+    .hero-accent-box {
+      display: none !important;
+    }
+
+    /* ======================================================================
+       FOTO — DENTRO DA SEGUNDA COLUNA, SEM OVERFLOW
+       ====================================================================== */
+
+    .hero-profile-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      min-width: 0;
+      height: 520px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .hero-image-frame {
+      position: relative;
+      width: min(100%, 500px);
+      height: 500px;
+      margin-left: auto;
+      overflow: hidden;
+      border: 0;
+      background: var(--color-nude-rose);
+      box-shadow: 0 18px 45px rgba(92, 69, 61, 0.09);
+      isolation: isolate;
+      border-radius: 47% 53% 45% 55% / 40% 43% 57% 60%;
+    }
+
+    /* Molduras permanecem DENTRO do frame para não invadir a coluna de texto. */
+    .hero-image-frame::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      z-index: 3;
+      border: 1px solid rgba(191, 158, 106, 0.72);
+      border-radius: 48% 52% 46% 54% / 41% 44% 56% 59%;
+      transform: rotate(-2.5deg);
+      pointer-events: none;
+    }
+
+    .hero-image-frame::after {
+      content: '';
+      position: absolute;
+      inset: 15px;
+      z-index: 3;
+      border: 1px solid rgba(255, 255, 255, 0.68);
+      border-radius: 51% 49% 45% 55% / 44% 47% 53% 56%;
+      pointer-events: none;
+    }
+
+    .hero-image-frame img {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      /* Rosto deslocado para a direita, sem mover o elemento para fora da coluna. */
+      object-position: 66% 18%;
+      transform: scale(1.035);
+      border-radius: inherit;
+      background: var(--color-nude-rose);
+    }
+
+    /* Elementos decorativos antigos do hero removidos. */
+
+    .doctor-caption-card {
+      display: none !important;
+    }
+
+    /* ======================================================================
+       RESPONSIVO
+       ====================================================================== */
+
+    @media (max-width: 991px) {
+      .hero-section::before {
+        display: none;
+      }
+
+      .hero-section {
+        min-height: auto;
+        padding-top: calc(var(--header-height) + 26px);
+        padding-bottom: 44px;
+      }
+
+      .hero-grid {
+        text-align: center;
+      }
+
+      .hero-content {
+        margin: 0 auto;
+        padding-bottom: 0;
+      }
+
+      .hero-name-rule {
+        justify-content: center;
+      }
+
+      .hero-slogan {
+        text-align: center;
+      }
+
+      .hero-cta-group {
+        justify-content: center;
+      }
+
+      .hero-profile-container {
+        height: 450px;
+        justify-content: center;
+      }
+
+      .hero-image-frame {
+        width: min(100%, 430px);
+        height: 450px;
+      }
+
+    }
+
+    @media (max-width: 575px) {
+      .hero-section {
+        padding-top: calc(var(--header-height) + 20px);
+        padding-bottom: 34px;
+      }
+
+      .hero-content .eyebrow {
+        font-size: 9px;
+        letter-spacing: 0.14em;
+      }
+
+      .hero-title {
+        font-size: 43px;
+      }
+
+      .hero-tagline {
+        padding: 0 12px;
+        font-size: 15px;
+      }
+
+      .hero-slogan {
+        font-size: 28px;
+        margin-bottom: 24px;
+      }
+
+      .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .hero-cta-group .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .hero-profile-container {
+        height: 370px;
+      }
+
+      .hero-image-frame {
+        width: min(88vw, 360px);
+        height: 370px;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION 2: SERVIÇOS
+       ========================================================================== */
+    .services-section {
+      padding: 90px 0;
+      background-color: var(--color-branco-puro);
+    }
+
+    @media (min-width: 992px) {
+      .services-section {
+        padding: 120px 0;
+      }
+    }
+
+    .section-header {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 56px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    @media (min-width: 768px) {
+      .section-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+
+    .section-title {
+      font-size: 34px;
+      line-height: 1.15;
+    }
+
+    @media (min-width: 768px) {
+      .section-title {
+        font-size: 46px;
+      }
+    }
+
+    .section-description {
+      font-size: 16px;
+      color: var(--color-grafite-muted);
+      max-width: 440px;
+      line-height: 1.6;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .service-card {
+      background-color: var(--color-bege-nude);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 36px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 260px;
+      transition: all var(--transition-fast);
+    }
+
+    .service-card:hover {
+      border-color: var(--color-dourado-suave);
+      background-color: var(--color-branco-puro);
+      box-shadow: 0 8px 24px rgba(166, 124, 122, 0.08);
+      transform: translateY(-2px);
+    }
+
+    .service-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      background-color: var(--color-branco-puro);
+      border: 1px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-dourado-suave);
+      margin-bottom: 24px;
+    }
+
+    .service-icon {
+      width: 24px;
+      height: 24px;
+      stroke-width: 1.6;
+    }
+
+    .service-card-title {
+      font-size: 26px;
+      margin-bottom: 12px;
+      color: var(--color-cinza-grafite);
+    }
+
+    .service-card-text {
+      font-size: 14.5px;
+      color: var(--color-grafite-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SECTION 3: SOBRE
+       ========================================================================== */
+    .about-section {
+      padding: 90px 0;
+      background-color: var(--color-bege-nude);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    @media (min-width: 992px) {
+      .about-section {
+        padding: 120px 0;
+      }
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (min-width: 992px) {
+      .about-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 64px;
+      }
+    }
+
+    .about-image-column {
+      position: relative;
+    }
+
+    .about-image-frame {
+      width: 100%;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      border: 1px solid var(--color-border);
+      background-color: var(--color-branco-puro);
+      aspect-ratio: 4 / 5;
+      box-shadow: 0 8px 24px rgba(44, 44, 44, 0.05);
+    }
+
+    .about-image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-title {
+      font-size: 34px;
+      line-height: 1.15;
+      margin-bottom: 22px;
+    }
+
+    @media (min-width: 768px) {
+      .about-title {
+        font-size: 46px;
+      }
+    }
+
+    .about-text {
+      font-size: 15.5px;
+      line-height: 1.7;
+      color: var(--color-grafite-muted);
+      margin-bottom: 16px;
+    }
+
+    .about-trust-list {
+      list-style: none;
+      margin-top: 16px;
+      margin-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .about-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--color-cinza-grafite);
+    }
+
+    .trust-icon {
+      width: 18px;
+      height: 18px;
+      color: var(--color-dourado-suave);
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       SECTION 4: AVALIAÇÕES
+       ========================================================================== */
+    .reviews-section {
+      padding: 90px 0;
+      background-color: var(--color-branco-puro);
+    }
+
+    @media (min-width: 992px) {
+      .reviews-section {
+        padding: 120px 0;
+      }
+    }
+
+    .reviews-header-block {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 50px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    @media (min-width: 768px) {
+      .reviews-header-block {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+
+    .reviews-score-badge {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 22px;
+      background-color: var(--color-bege-nude);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      width: fit-content;
+    }
+
+    .score-number {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--color-cinza-grafite);
+    }
+
+    .stars-group {
+      display: flex;
+      gap: 3px;
+      color: var(--color-dourado-suave);
+      margin-bottom: 4px;
+    }
+
+    .star-icon {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    .score-label {
+      font-size: 12.5px;
+      color: var(--color-grafite-muted);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    @media (min-width: 992px) {
+      .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .review-card {
+      background-color: var(--color-bege-nude);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .review-quote {
+      font-family: var(--font-serif);
+      font-size: 21px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 1.45;
+      color: var(--color-cinza-grafite);
+      margin-bottom: 24px;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid var(--color-border);
+    }
+
+    .review-author-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--color-rose-queimado);
+    }
+
+    .review-verified {
+      font-size: 11.5px;
+      color: var(--color-grafite-soft);
+    }
+
+    /* ==========================================================================
+       SECTION 5: AGENDAMENTO (CTA)
+       ========================================================================== */
+    .cta-section {
+      padding: 80px 0;
+      background-color: var(--color-nude-rose);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .cta-section {
+        padding: 100px 0;
+      }
+    }
+
+    .cta-container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .cta-icon-wrap {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 18px;
+      color: var(--color-dourado-suave);
+    }
+
+    .cta-title {
+      font-size: 34px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--color-cinza-grafite);
+    }
+
+    @media (min-width: 768px) {
+      .cta-title {
+        font-size: 46px;
+      }
+    }
+
+    .cta-text {
+      font-size: 17px;
+      color: var(--color-grafite-muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (min-width: 540px) {
+      .cta-buttons {
+        flex-direction: row;
+      }
+    }
+
+    /* ==========================================================================
+       SECTION 6: LOCALIZAÇÃO
+       ========================================================================== */
+    .location-section {
+      padding: 90px 0;
+      background-color: var(--color-branco-puro);
+    }
+
+    @media (min-width: 992px) {
+      .location-section {
+        padding: 120px 0;
+      }
+    }
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: stretch;
+    }
+
+    @media (min-width: 992px) {
+      .location-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+      }
+    }
+
+    .location-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .location-info-title {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .location-info-title {
+        font-size: 46px;
+      }
+    }
+
+    .location-details-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-bottom: 32px;
+    }
+
+    .location-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .location-item-icon {
+      width: 22px;
+      height: 22px;
+      color: var(--color-dourado-suave);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .location-item-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cinza-grafite);
+      margin-bottom: 3px;
+    }
+
+    .location-item-desc {
+      font-size: 14.5px;
+      color: var(--color-grafite-muted);
+      line-height: 1.5;
+    }
+
+    .location-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .location-map-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .location-map-frame {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background-color: var(--color-bege-nude);
+      position: relative;
+    }
+
+    .location-map-frame iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: 0;
+      display: block;
+    }
+
+    .map-helper-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      background-color: var(--color-bege-nude);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      font-size: 12.5px;
+      color: var(--color-grafite-muted);
+    }
+
+    .map-helper-link {
+      font-weight: 700;
+      color: var(--color-rose-queimado);
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .map-helper-link:hover {
+      color: var(--color-rose-hover);
+      text-decoration: underline;
+    }
+
+    /* ==========================================================================
+       SECTION 7: FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--color-dark-footer);
+      color: var(--color-dark-footer-text);
+      padding: 70px 0 30px;
+      border-top: 1px solid #363230;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #363230;
+    }
+
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+      }
+    }
+
+    .footer-brand-title {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--color-branco-puro);
+      margin-bottom: 10px;
+    }
+
+    .footer-brand-tagline {
+      font-size: 14.5px;
+      color: #B8B0AB;
+      max-width: 320px;
+      line-height: 1.6;
+    }
+
+    .footer-heading {
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-dourado-suave);
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14.5px;
+      color: #D6CEC8;
+      transition: color var(--transition-fast);
+    }
+
+    .footer-link:hover {
+      color: var(--color-branco-puro);
+    }
+
+    .footer-badge-lgbtq {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      color: var(--color-dark-footer-text);
+      background-color: var(--color-dark-footer-card);
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid #484340;
+      margin-top: 16px;
+    }
+
+    .footer-bottom {
+      padding-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 12.5px;
+      color: #9E958F;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+
+    /* ==========================================================================
+       WHATSAPP FLOATING BUTTON
+       ========================================================================== */
+    .whatsapp-floating {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 56px;
+      height: 56px;
+      background-color: #25D366;
+      color: var(--color-branco-puro);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+      z-index: 990;
+      transition: transform var(--transition-fast), background-color var(--transition-fast);
+    }
+
+    .whatsapp-floating:hover {
+      background-color: #20BD5A;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-floating svg {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       SMOOTH SCROLL REVEAL (INTERSECTION OBSERVER)
+       ========================================================================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      ::before,
+      ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="Dra. Letícia Meira - Página Inicial">
+        Dra. Letícia Meira
+        <span class="logo-tagline">Estética Avançada • Harmonização Facial</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-desktop" aria-label="Navegação Principal">
+        <a href="#servicos" class="nav-link">Serviços</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#avaliacoes" class="nav-link">Avaliações</a>
+        <a href="#localizacao" class="nav-link">Localização</a>
+        <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          style="padding: 10px 24px; font-size: 12px;">
+          Agendar Consulta
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-menu-btn" id="mobileToggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+        aria-controls="mobileDrawer">
+        <svg id="menuIcon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-label="Menu móvel">
+      <a href="#servicos" class="nav-link mobile-link">Serviços</a>
+      <a href="#sobre" class="nav-link mobile-link">Sobre</a>
+      <a href="#avaliacoes" class="nav-link mobile-link">Avaliações</a>
+      <a href="#localizacao" class="nav-link mobile-link">Localização</a>
+      <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+        style="width: 100%;">
+        Agendar pelo WhatsApp
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </a>
+      <a href="https://www.trinks.com/clinica-dra-leticia-meira/" target="_blank" rel="noopener noreferrer"
+        class="btn btn-secondary" style="width: 100%;">
+        Reservar pela Trinks
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+     SECTION 1: HERO
+     ========================================================================== -->
+
+    <section class="hero-section" id="inicio">
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- ==========================================================
+               TEXTO PRINCIPAL
+               ========================================================== -->
+
+          <div class="hero-content reveal">
+
+            <span class="eyebrow">
+              Estética Avançada • BOTOX • Harmonização Facial
+            </span>
+
+            <h1 class="hero-title">Dra. Letícia Meira</h1>
+
+            <div class="hero-name-rule" aria-hidden="true">
+              <div class="hero-name-rule-line"></div>
+              <div class="hero-name-rule-diamond"></div>
+              <div class="hero-name-rule-line" style="width:28px"></div>
+            </div>
+
+            <p class="hero-tagline">
+              Harmonização facial com naturalidade e elegância.
+            </p>
+
+            <span class="hero-slogan">
+              Realce o que te faz <span class="slogan-underline">única</span>.
+            </span>
+
+            <div class="hero-cta-group">
+
+              <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Agendar Consulta
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <a href="#servicos" class="btn btn-secondary">
+                Saiba Mais
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- ==========================================================
+               FOTOGRAFIA
+               ========================================================== -->
+
+          <div class="hero-profile-container reveal">
+
+            <div class="hero-image-frame">
+              <img src="dra-leticia-meira.png" alt="Retrato profissional da Dra. Letícia Meira" width="575" height="540"
+                fetchpriority="high">
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="services-section" id="servicos">
+      <div class="container">
+
+        <!-- Divisor ornamental entre hero e serviços -->
+        <div class="divider-ornament" style="margin-bottom: 56px;" aria-hidden="true">
+          <div class="divider-ornament-line"></div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 4c1.5 3 4 5 7 6-2 3-5 4-7 9-2-5-5-6-7-9 3-1 5.5-3 7-6z" />
+          </svg>
+          <div class="divider-ornament-line"></div>
+        </div>
+
+        <div class="section-header reveal">
+          <div>
+            <div class="section-ornament" aria-hidden="true">
+              <div class="section-ornament-line"></div>
+              <div class="section-ornament-dot"></div>
+            </div>
+            <span class="eyebrow">Procedimentos & Cuidados</span>
+            <div class="title-with-rule">
+              <div class="title-rule-bar"></div>
+              <h2 class="section-title">Cuidado preciso.<br>Beleza preservada.</h2>
+            </div>
+          </div>
+          <p class="section-description">
+            Cada tratamento começa com escuta atenta, avaliação minuciosa e um plano personalizado para valorizar sua
+            autenticidade.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Card 1: BOTOX -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="m18 2 4 4"></path>
+                  <path d="m17 7 3-3"></path>
+                  <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5"></path>
+                  <path d="m9 11 4 4"></path>
+                  <path d="m5 19-3 3"></path>
+                  <path d="m14 4 6 6"></path>
+                </svg>
+              </div>
+              <h3 class="service-card-title">BOTOX</h3>
+              <p class="service-card-text">
+                Suaviza linhas de expressão e previne rugas dinâmicas, preservando a leveza e a naturalidade de cada
+                expressão facial.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Preenchimento Labial -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Preenchimento Labial</h3>
+              <p class="service-card-text">
+                Contorno, hidratação e volume na medida certa com ácido hialurônico de alta pureza, desenhado para
+                valorizar a anatomia única da sua boca.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: Harmonização Facial -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 3v18"></path>
+                  <path d="M3 12h18"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Harmonização Facial</h3>
+              <p class="service-card-text">
+                Planejamento individualizado para equilibrar proporções e contornos, proporcionando rejuvenescimento com
+                resultados elegantes e sem excessos.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Avaliação de Pele -->
+          <article class="service-card reveal">
+            <div>
+              <div class="service-icon-wrap" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="service-card-title">Avaliação de Pele</h3>
+              <p class="service-card-text">
+                Uma análise clínica detalhada de textura, sustentação e hidratação para indicar o protocolo ideal de
+                bioestimuladores e cuidados diários.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: SOBRE
+         ========================================================================== -->
+    <section class="about-section" id="sobre">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image-column reveal">
+            <div class="about-image-frame">
+              <img src="dra-leticia-meira.png" alt="Dra. Letícia Meira em seu espaço de atendimento" width="480"
+                height="600" loading="lazy">
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <div class="section-ornament" aria-hidden="true">
+              <div class="section-ornament-line"></div>
+              <div class="section-ornament-dot"></div>
+            </div>
+            <span class="eyebrow">Sobre a Especialista</span>
+            <div class="title-with-rule">
+              <div class="title-rule-bar"></div>
+              <h2 class="about-title">Professora e especialista em HOF</h2>
+            </div>
+
+            <p class="about-text">
+              Dra. Letícia Meira alia sólida formação acadêmica, experiência docente e refinado olhar estético para
+              oferecer tratamentos harmoniosos, éticos e seguros.
+            </p>
+
+            <p class="about-text">
+              Em cada atendimento, você encontra acolhimento humanizado, transparência e um plano estruturado com
+              embasamento anatômico, priorizando a valorização da sua identidade.
+            </p>
+
+            <ul class="about-trust-list">
+              <li class="about-trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Atendimento individualizado e acolhedor</span>
+              </li>
+              <li class="about-trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Resultados naturais que respeitam seus traços</span>
+              </li>
+              <li class="about-trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Técnica refinada e segurança em cada detalhe</span>
+              </li>
+            </ul>
+
+            <div>
+              <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Conversar com a Dra. Letícia
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: AVALIAÇÕES
+         ========================================================================== -->
+    <section class="reviews-section" id="avaliacoes">
+      <div class="container">
+
+        <div class="reviews-header-block reveal">
+          <div>
+            <div class="section-ornament" aria-hidden="true">
+              <div class="section-ornament-line"></div>
+              <div class="section-ornament-dot"></div>
+            </div>
+            <span class="eyebrow">Depoimentos & Reputação</span>
+            <div class="title-with-rule">
+              <div class="title-rule-bar"></div>
+              <h2 class="section-title">Confiança que se constrói em cada atendimento</h2>
+            </div>
+          </div>
+
+          <div class="reviews-score-badge">
+            <div class="score-number">5.0</div>
+            <div>
+              <div class="stars-group" aria-label="Avaliação 5 de 5 estrelas">
+                <svg class="star-icon" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <svg class="star-icon" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <svg class="star-icon" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <svg class="star-icon" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+                <svg class="star-icon" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              </div>
+              <div class="score-label">Avaliações no Google</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+
+          <!-- Quote 1 -->
+          <article class="review-card reveal">
+            <blockquote class="review-quote">
+              “A única que confio meu botox. Indico de olhos fechados!”
+            </blockquote>
+            <div class="review-author">
+              <div>
+                <strong class="review-author-name">Maria Eduarda</strong>
+                <div class="review-verified">Avaliação verificada no Google</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Quote 2 -->
+          <article class="review-card reveal">
+            <blockquote class="review-quote">
+              “Atendimento maravilhoso! Super atenciosa, avaliação de pele impecável.”
+            </blockquote>
+            <div class="review-author">
+              <div>
+                <strong class="review-author-name">Camila</strong>
+                <div class="review-verified">Avaliação verificada no Google</div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Quote 3 -->
+          <article class="review-card reveal">
+            <blockquote class="review-quote">
+              “Letícia é um amor e deixa a gente super confortável.”
+            </blockquote>
+            <div class="review-author">
+              <div>
+                <strong class="review-author-name">Tacianna</strong>
+                <div class="review-verified">Avaliação verificada no Google</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: AGENDAMENTO (CTA)
+         ========================================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-container reveal">
+
+          <div class="cta-icon-wrap" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+
+          <span class="eyebrow" style="color: var(--color-rose-queimado);">Agende seu Momento</span>
+          <h2 class="cta-title">Seu cuidado começa com uma boa conversa.</h2>
+          <p class="cta-text">
+            Escolha o canal de sua preferência e reserve seu horário para uma avaliação presencial em Goiana.
+          </p>
+
+          <div class="cta-buttons">
+            <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                </path>
+              </svg>
+              Agendar pelo WhatsApp
+            </a>
+
+            <a href="https://www.trinks.com/clinica-dra-leticia-meira/" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Agendar pela Trinks
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: LOCALIZAÇÃO
+         ========================================================================== -->
+    <section class="location-section" id="localizacao">
+      <div class="container">
+        <div class="location-grid">
+
+          <div class="location-info reveal">
+            <div>
+              <div class="section-ornament" aria-hidden="true">
+                <div class="section-ornament-line"></div>
+                <div class="section-ornament-dot"></div>
+              </div>
+              <span class="eyebrow">Consultório & Atendimento</span>
+              <div class="title-with-rule">
+                <div class="title-rule-bar"></div>
+                <h2 class="location-info-title">Onde nos encontrar</h2>
+              </div>
+
+              <div class="location-details-list">
+
+                <div class="location-item">
+                  <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <div class="location-item-title">Galeria Senna</div>
+                    <div class="location-item-desc">
+                      Tv. dos Martírios, sala 06<br>
+                      Centro, Goiana - PE, CEP 55900-000
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <div>
+                    <div class="location-item-title">Horário de Funcionamento</div>
+                    <div class="location-item-desc">
+                      Segunda a Sábado — Fecha às 20:00<br>
+                      Atendimento mediante agendamento prévio.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="location-item">
+                  <svg class="location-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                  <div>
+                    <div class="location-item-title">Contato Direto</div>
+                    <div class="location-item-desc">
+                      WhatsApp: (81) 98921-9134
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Falar com a equipe
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="https://maps.google.com/?q=Galeria+Sena,+Tv.+dos+Mart%C3%ADrios,+Goiana+-+PE" target="_blank"
+                rel="noopener noreferrer" class="btn btn-secondary">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                Traçar Rota no Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="location-map-wrap reveal">
+            <div class="location-map-frame">
+              <iframe title="Localização - Galeria Sena, Goiana - PE"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.154730456082!2d-35.00694932398468!3d-7.558089692455799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab628f8b2a7651%3A0xe815abcfa8cf1631!2sGaleria%20Sena!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+
+            <div class="map-helper-bar">
+              <span>📍 Galeria Senna, Tv. dos Martírios, sala 06 - Goiana, PE</span>
+              <a href="https://maps.google.com/?q=Galeria+Sena,+Tv.+dos+Mart%C3%ADrios,+Goiana+-+PE" target="_blank"
+                rel="noopener noreferrer" class="map-helper-link">
+                Abrir no app Google Maps →
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 7: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand -->
+        <div>
+          <div class="footer-brand-title">Dra. Letícia Meira</div>
+          <p class="footer-brand-tagline">
+            Harmonização facial com naturalidade, precisão clínica e elegância. Realce seus traços com confiança e
+            segurança.
+          </p>
+          <div class="footer-badge-lgbtq">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+              </path>
+            </svg>
+            <span>Espaço LGBTQ+ friendly</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Contato -->
+        <div>
+          <h4 class="footer-heading">Contato & Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a class="footer-link" href="https://www.instagram.com/dra.leticiameira/" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                </svg>
+                <span>@dra.leticiameira</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                  </path>
+                </svg>
+                <span>(81) 98921-9134</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Agendamento -->
+        <div>
+          <h4 class="footer-heading">Agendamento</h4>
+          <ul class="footer-links">
+            <li>
+              <a class="footer-link" href="https://www.trinks.com/clinica-dra-leticia-meira/" target="_blank"
+                rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Reservar online via Trinks</span>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 11 12 14 22 4"></polyline>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+                <span>Atendimento no WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Dra. Letícia Meira. Todos os direitos reservados.</div>
+        <div>Galeria Senna, Centro, Goiana - PE</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       WHATSAPP FLOATING BUTTON (FIXED BOTTOM RIGHT)
+       ========================================================================== -->
+  <a href="https://wa.me/5581989219134" target="_blank" rel="noopener noreferrer" class="whatsapp-floating"
+    aria-label="Falar com a Dra. Letícia Meira pelo WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm5.8 14.28c-.24.68-1.39 1.3-1.92 1.38-.5.08-1.15.12-3.32-.78-2.6-1.08-4.27-3.72-4.4-3.89-.13-.17-1.05-1.4-1.05-2.67 0-1.27.67-1.89.91-2.14.24-.25.52-.31.7-.31.17 0 .35 0 .5.01.16.01.38-.06.59.45.22.53.75 1.83.82 1.96.07.14.11.3.02.48-.09.17-.14.28-.27.44-.14.15-.29.34-.41.46-.14.13-.28.28-.12.56.16.27.7 1.16 1.5 1.87 1.04.93 1.92 1.22 2.19 1.36.27.14.43.12.59-.07.16-.18.68-.79.86-1.06.18-.27.36-.23.6-.14.25.09 1.57.74 1.84.87.27.14.45.21.52.32.07.12.07.68-.17 1.36z" />
+    </svg>
+  </a>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT (CLEAN, NO FRAMEWORKS)
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Sticky Header Background on Scroll
+      var header = document.getElementById('header');
+      function handleScroll() {
+        if (window.scrollY > 20) {
+          header.classList.add('is-scrolled');
+        } else {
+          header.classList.remove('is-scrolled');
+        }
+      }
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+
+      // 2. Mobile Menu Drawer Toggle
+      var mobileToggle = document.getElementById('mobileToggle');
+      var mobileDrawer = document.getElementById('mobileDrawer');
+      var mobileLinks = document.querySelectorAll('.mobile-link');
+
+      function toggleMobileMenu() {
+        var isOpen = mobileDrawer.classList.toggle('is-open');
+        mobileToggle.setAttribute('aria-expanded', isOpen);
+      }
+
+      function closeMobileMenu() {
+        mobileDrawer.classList.remove('is-open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+      }
+
+      if (mobileToggle && mobileDrawer) {
+        mobileToggle.addEventListener('click', toggleMobileMenu);
+        mobileLinks.forEach(function (link) {
+          link.addEventListener('click', closeMobileMenu);
+        });
+      }
+
+      // 3. Smooth Scroll Reveal Animation with IntersectionObserver
+      var reveals = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: '0px 0px -40px 0px'
+        });
+
+        reveals.forEach(function (el) {
+          observer.observe(el);
+        });
+      } else {
+        // Fallback for older browsers
+        reveals.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
